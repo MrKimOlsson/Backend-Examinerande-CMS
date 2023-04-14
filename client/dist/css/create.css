@@ -1,0 +1,10 @@
+@import './default.css';
+
+.card {
+  min-width: 700px;
+}
+
+textarea.form-control {
+  height: 200px;
+  resize: none;
+}

@@ -1,0 +1,54 @@
+@import './default.css';
+
+#output {
+  margin-top: 4rem;
+}
+.post {
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+  display: flex;
+  gap: 1rem;
+  overflow: hidden;
+  border: 1px solid #c4c4c4;
+  padding: .5rem;
+  position: relative;
+  color: #000;
+}
+.post img {
+  width: 30%;
+  height: 30%;
+  object-fit: cover;
+}
+.img-container {
+  flex: 1;
+  height: 70px;
+}
+.right {
+  flex: 5;
+}
+.top,
+.tags { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tags {
+  list-style: none;
+  gap: .5rem;
+}
+.tag {
+  padding: .3rem .6rem;
+  border-radius: .3rem;
+  background-color: #333;
+  color: #fff;
+  font-size: .7rem;
+}
+.likes {
+  position: absolute;
+  bottom: .5rem;
+  right: .5rem;
+}
+.body {
+  margin-top: 1rem;
+  padding-right: 4rem;
+}

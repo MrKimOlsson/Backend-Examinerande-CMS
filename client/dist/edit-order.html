@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/create.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card">
+      <div class="justify-end">
+        <button class="btn" id="deleteBtn"><i class="fa-solid fa-trash"></i></button>
+      </div>
+      <form id="editForm">
+        <div class="input-group">
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title" class="form-control">
+        </div>
+        <div class="input-group">
+          <label for="imgURL">Image URL</label>
+          <input type="text" name="imgURL" id="imgURL" class="form-control">
+        </div>
+        <div class="input-group">
+          <label for="price">Price</label>
+          <input type="price" name="price" id="price" class="form-control">
+        </div>
+        <div class="input-group">
+          <label for="description">description</label>
+          <textarea name="description" id="description" class="form-control"></textarea>
+        </div>
+
+        <p id="error" class="error"></p>
+
+        <button class="btn btn-block btn-primary">Edit</button>
+        <a href="index.html" class="btn btn-block btn-primary">Back</a>
+
+      </form>
+    </div>
+  </div>
+
+
+  <div id="modal" class="modal-bg d-none">
+    <div class="modal card text-center">
+      <h3>Varning</h3>
+      <p class="my-1">Är du säker på att du vill ta bort den här produkten?</p>
+      <div class="space-between">
+        <button class="btn btn-primary" id="yBtn">JA</button>
+        <button class="btn btn-secondary" id="nBtn">NEJ</button>
+      </div>
+      <p id="modal-error" class="error"></p>
+    </div>
+  </div>
+
+  <script src="js/edit-order.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employees</title>
+  <link rel="stylesheet" href="css/users.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html"><h1>Company</h1></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Orders</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="users.html">Users</a></li>
+      </ul>
+      <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+    </div>
+  </nav>
+  
+  <div class="container py-1">
+    <a href="register.html" class="btn btn-primary">Register User</a>
+
+    <div id="output">
+
+      <!-- <div class="employee">
+        <p>Joakim Lindh</p>
+        <div>
+          <button class="btn btn-sm"><i class="fa-solid fa-pen"></i></button>
+          <button class="btn btn-sm"><i class="fa-solid fa-trash"></i></button>
+        </div>
+      </div> -->
+
+    </div>
+  </div>
+
+
+  <div id="modal" class="modal-bg d-none">
+    <div class="modal card text-center">
+      <h3>Varning</h3>
+      <p class="my-1">Är du säker på att du vill ta bort den här anställda</p>
+      <div class="space-between">
+        <button class="btn btn-primary" id="yBtn">JA</button>
+        <button class="btn btn-secondary" id="nBtn">NEJ</button>
+      </div>
+      <p id="modal-error" class="error"></p>
+    </div>
+  </div>
+  
+
+  <script src="js/users.js"></script>
+</body>
+</html>

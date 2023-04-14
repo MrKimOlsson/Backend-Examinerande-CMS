@@ -1,0 +1,5 @@
+@import './default.css';
+
+#loginForm {
+  min-width: 400px;
+}
