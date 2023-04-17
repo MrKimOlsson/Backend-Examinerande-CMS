@@ -2,7 +2,6 @@ const Product = require('../schemas/productSchema');
 
 exports.createNewProduct = async (req, res) => {
 
-  // const { title, body, imgURL, author, tags } = req.body;
   const { title, imgURL, description, price } = req.body;
 
   if(!title || !imgURL || !description || !price ) {
@@ -21,22 +20,9 @@ exports.createNewProduct = async (req, res) => {
 
 exports.getProducts = async (req, res) => {
   try {  
-
-    // _______________________________________________TAG___________!???!?!?!______________________________
-    // const { tag } = req.query;
-
-    // let query;
-    // if(tag) {
-    //   query = { tags: tag }
-    // } else {
-    //   query = {}
-    // }
-
-    // const query = tag ? { tags: tag } : {}
-
-    // const products = await Product.find(query).populate('user')
     const products = await Product.find()
     res.status(200).json(products)
+
   } catch (err) {
     res.status(500).json({ message: 'Something went wrong when fetching the product' })
   }
